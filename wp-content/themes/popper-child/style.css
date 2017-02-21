@@ -18,16 +18,17 @@ Version:  0.0.1
   font-style: italic;
 }
 
-/*.sticky::before{
+.sticky::before{
   display: block;
   padding: .2em 1em;
   text-align: right;
   font-family: 'Fira Sans', sans-serif;
   font-size: 80%;
   content: 'Sticky Post';
-  background-color: hsl(0,0%, 80%);
+  background-color: white;
+  color: deeppink;
 
-}*/
+}
 
 /*---- Inverting the theme colors ---- */
 .site-header,
@@ -39,8 +40,7 @@ Version:  0.0.1
   color: deeppink;
 
 }
-.content-area,
-.widget{
+.content-area, .widget{
   background-color: deeppink;
 }
 .site-title,
@@ -49,7 +49,8 @@ Version:  0.0.1
 .site-info,
 .url,
 time,
-.comments-link > a{
+.comments-link > a,
+.site-footer a{
   color: deeppink;
 }
 
@@ -57,13 +58,48 @@ time,
     background: deeppink;
     color: white;
 }
+.continue-reading > a:hover{
+  background: white;
+  color: deeppink;
+  border: solid 2px white;
+}
 .entry-meta a:hover{
   border-bottom: 2px solid deeppink;
   color: deeppink;
 }
 
-.entry-title{
+.entry-title,
+.entry-content,
+.continue-reading > a,
+.page-title,
+.meta-content,
+.entry-date,
+.entry-footer span a,
+.comment-metadata a,
+.comment-meta a,
+.comment-content a,
+.comment-form a,
+.comments-area,
+.reply a,
+.widget a,
+.entry-content a{
   color: white;
+}
+
+.comment-form .form-submit input{
+  color: deeppink;
+}
+.comment-form .form-submit input:hover,
+.reply a:hover{
+  background: white;
+  border: solid 2px white;
+  color: deeppink;
+}
+.index-entry-meta a {
+  color: white
+}
+.index-entry-meta a:hover{
+  border-bottom: solid 2px white;
 }
 .site-logo > a{
   border: solid 1px deeppink;
