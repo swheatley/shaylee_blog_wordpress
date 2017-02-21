@@ -1,0 +1,70 @@
+/*
+Theme Name:  Popper Child Theme
+Theme URI: https://lynda.com/mor10
+Description: A child theme of Morten's awesome Popper theme
+Author:  Morten Rand-Hendricksen
+Author URI:  http://mor10.com
+Template:  popper
+( What theme folder contains the parent theme )
+Version:  0.0.1
+*/
+@import url("../popper/style.css");
+
+.site-title{
+  font-weight: 300;
+}
+
+.site-description{
+  font-style: italic;
+}
+
+/*.sticky::before{
+  display: block;
+  padding: .2em 1em;
+  text-align: right;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 80%;
+  content: 'Sticky Post';
+  background-color: hsl(0,0%, 80%);
+
+}*/
+
+/*---- Inverting the theme colors ---- */
+.site-header,
+.site-logo > a,
+.entry-meta,
+#secondary,
+.site-footer{
+  background-color: white;
+  color: deeppink;
+
+}
+.content-area,
+.widget{
+  background-color: deeppink;
+}
+.site-title,
+.site-logo > a,
+.site-description,
+.site-info,
+.url,
+time,
+.comments-link > a{
+  color: deeppink;
+}
+
+.site-logo a:hover .site-firstletter, .site-logo a:focus .site-firstletter {
+    background: deeppink;
+    color: white;
+}
+.entry-meta a:hover{
+  border-bottom: 2px solid deeppink;
+  color: deeppink;
+}
+
+.entry-title{
+  color: white;
+}
+.site-logo > a{
+  border: solid 1px deeppink;
+}
